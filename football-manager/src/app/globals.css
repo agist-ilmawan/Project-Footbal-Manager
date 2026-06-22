@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Mengatur warna dasar aplikasi agar konsisten 
+   dengan tema Dark Mode (Slate 950) 
+*/
+:root {
+  --background: #020617; /* Slate 950 */
+  --foreground: #f1f5f9; /* Slate 100 */
+}
+
+/* Mengatur properti global body 
+   agar font dan warna default selalu terpakai 
+*/
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility tambahan: 
+   Memastikan scrollbar terlihat elegan di tema dark 
+*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #020617;
+}
